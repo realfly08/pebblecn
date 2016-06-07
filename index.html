@@ -6,10 +6,13 @@
     <title>Pebble中文开发文档</title>
     <style>
         .section-main{
-            width: 100%;height: auto;border: 1px solid red;overflow: auto
+            width: 100%;height: auto;overflow: auto
         }
         .article-platform{
-            width: 40.0rem;height: auto;background-color: aqua;text-align: center;border-radius: 0.5rem
+            height: auto;background-color: aqua;text-align: center;border-radius: 0.5rem
+        }
+        article{
+            width: 50rem;margin-left: 2rem;
         }
         p{
             margin: 0 0 1.2rem; font-size: 1.5rem;
@@ -20,8 +23,8 @@
     <section class="section-main">
         <h3>PEBBLEKIT JS</h3>
         <article class="article-platform">
-            <p>This page contains some instructions that are different if you're using CloudPebble or if you're using the SDK locally on your computer.</p>
-            <p>Select whether you're using CloudPebble or the SDK below to show the relevant instructions!</p>
+            <p>此文档会因为你使用的是CloudPebble开发还是你在电脑上使用的本地SDK进行开发而有一点点的不同。</p>
+            <p>选择下面的开发方式来显示不同的开发说明。</p>
             <div >
                 <a>
                     <img src="">
@@ -32,18 +35,15 @@
                 </a>
             </div>
         </article>
-        <article class="article-platform">
-            <p>This page contains some instructions that are different if you're using CloudPebble or if you're using the SDK locally on your computer.</p>
-            <p>Select whether you're using CloudPebble or the SDK below to show the relevant instructions!</p>
-            <div >
-                <a>
-                    <img src="">
-                    <h4>cloudpebble</h4>
-                </a>
-                <a><img src="">
-                    <h4>sdk</h4>
-                </a>
-            </div>
+        <article class="">
+            <p>PebbleKit JS 允许向任何app或者表盘中添加JavaScript组件(运行在官方移动应用中的一个沙盒里),可以最大限度地拓展pebble可以实现的功能。</p>
+                <p>PebbleKit JS可以为pebble额外提供的功能包括：</p>
+            <ul>
+                <li>允许使用localStorage拓展存储空间</li>
+                <li>可以通过XhrHttpRequest访问网络</li>
+                <li>通过geolocation(地理定位)获取位置信息</li>
+                <li>允许用户通过配置来自定义应用的行为。在应用配置中会详细介绍</li>
+            </ul>
         </article>
         <article class="article-platform" id="test3">
             <p>This page contains some instructions that are different if you're using CloudPebble or if you're using the SDK locally on your computer.</p>
